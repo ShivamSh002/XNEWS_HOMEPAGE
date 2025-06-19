@@ -28,16 +28,23 @@ const App = () => {
     <div className="app-container">
       <header className="header">
         <img src="logo.svg" alt="Logo" className="logo" />
+         <ul className="nav-items">
+             <li><a href="#home">Home</a></li>
+            <li><a href="#new">New</a></li>
+            <li><a href="#popular">Popular</a></li>
+            <li><a href="#trending">Trending</a></li>
+            <li><a href="#categories">Categories</a></li>
+          </ul>
         <nav className={menuOpen ? 'nav open' : 'nav'}>
           <button id="menu-close" className="menu-button" onClick={toggleMenu}>
             ×
           </button>
           <ul className="nav-items">
-            <li>Home</li>
-            <li>New</li>
-            <li>Popular</li>
-            <li>Trending</li>
-            <li>Categories</li>
+             <li><a href="#home">Home</a></li>
+            <li><a href="#new">New</a></li>
+            <li><a href="#popular">Popular</a></li>
+            <li><a href="#trending">Trending</a></li>
+            <li><a href="#categories">Categories</a></li>
           </ul>
         </nav>
         <button id="menu-button" className="menu-button" onClick={toggleMenu}>
@@ -48,7 +55,7 @@ const App = () => {
       <main className="main-content">
         <section className="hero-section">
           <div className="hero-img">
-            <img src={isMobile ? heroMobile : heroDesktop} alt="Hero Image" />
+            <img src={isMobile ? "image-web-3-mobile.jpg" : heroDesktop} alt="Hero Image" />
           </div>
           <div className="hero-text">
             <h1 className="main-text">The Bright Future of Web 3.0?</h1>
