@@ -27,12 +27,12 @@ const App = () => {
   return (
     <div className="app-container">
       <header className="header">
-        <img src="logo.svg" alt="Logo" className="logo" />
+        <img src={logo} alt="Logo" className="logo" />
         <nav className={menuOpen ? 'nav open' : 'nav'}>
           <button id="menu-close" className="menu-button" onClick={toggleMenu}>
             ×
           </button>
-          <ul className="nav-itmes">
+          <ul className="nav-items">
              <li><a href="#home">Home</a></li>
             <li><a href="#new">New</a></li>
             <li><a href="#popular">Popular</a></li>
@@ -48,7 +48,7 @@ const App = () => {
       <main className="main-content">
         <section className="hero-section">
           <div className="hero-img">
-            <img src={isMobile ? "image-web-3-mobile.jpg" : heroDesktop} alt="Hero Image" />
+            <img src={isMobile ? heroMobile : heroDesktop} alt="Hero Image" />
           </div>
           <div className="hero-text">
             <h1 className="main-text">The Bright Future of Web 3.0?</h1>
