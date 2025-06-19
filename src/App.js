@@ -7,6 +7,7 @@ import retroPcs from './assets/images/image-retro-pcs.jpg';
 import topLaptops from './assets/images/image-top-laptops.jpg';
 import gaming from './assets/images/image-gaming-growth.jpg';
 
+
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 

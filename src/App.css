@@ -2,7 +2,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  font-family: 'Arial', sans-serif; /* Placeholder; adjust based on font requirements */
+  font-family: 'Arial', sans-serif;
 }
 
 .header {
@@ -129,7 +129,7 @@
 }
 
 .read-more:hover {
-  background-color: #1a1a1a;
+  background-color: #e04e40;
 }
 
 .right-block {
